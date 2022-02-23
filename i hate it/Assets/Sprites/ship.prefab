@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637c0bc9bc895b4a8df40106d87d9e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
+  SuperBullet: {fileID: 22347787976575633, guid: 9fc424819e58b9a4e99394c0f979867f, type: 3}
   bullet: {fileID: 8085221343826530258, guid: b7515130c5499ae4e9a4059a815cd375, type: 3}
   spawnpoint: {fileID: 5264661393072209229}
 --- !u!114 &5264661393072209227

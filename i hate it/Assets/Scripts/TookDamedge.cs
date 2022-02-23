@@ -25,6 +25,12 @@ public class TookDamedge : MonoBehaviour
      if (collision.tag==name)
         {
             hp = hp - 10;
-        }   
+        }
+      else if(collision.tag == "SuperBullet") 
+        {
+            hp = hp - 100;
+
+        }
     }
+   
 }

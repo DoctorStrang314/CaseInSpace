@@ -8,6 +8,7 @@ TagManager:
   - triggers
   - boss
   - enemy
+  - SuperBullet
   layers:
   - Default
   - TransparentFX
