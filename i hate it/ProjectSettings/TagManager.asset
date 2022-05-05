@@ -8,6 +8,9 @@ TagManager:
   - triggers
   - boss
   - enemy
+  - SuperBullet
+  - enemy2
+  - Fog
   layers:
   - Default
   - TransparentFX
