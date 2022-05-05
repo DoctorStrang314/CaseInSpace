@@ -30,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5264661393072209230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.5, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0069, y: -3.5, z: -2}
+  m_LocalScale: {x: 0.80808, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0, g: 0.9056604, b: 0.09322465, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 9de51c0f59979e846b790abd50b859aa, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.7, y: 1.67}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637c0bc9bc895b4a8df40106d87d9e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoldShine: {fileID: 1864212756305452762, guid: 8c8a20ddeb9924746bf366e141be4919, type: 3}
   SuperBullet: {fileID: 22347787976575633, guid: 9fc424819e58b9a4e99394c0f979867f, type: 3}
   bullet: {fileID: 8085221343826530258, guid: b7515130c5499ae4e9a4059a815cd375, type: 3}
   spawnpoint: {fileID: 5264661393072209229}

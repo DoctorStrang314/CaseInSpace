@@ -15,7 +15,7 @@ public class bulletMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(0, 3, 0) * Time.deltaTime);
+        transform.Translate(new Vector3(0, 25, 0) * Time.deltaTime);
 
        
 

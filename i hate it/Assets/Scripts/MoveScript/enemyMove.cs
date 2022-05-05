@@ -13,10 +13,14 @@ public class enemyMove : MonoBehaviour
     void Update()
     {
         transform.Translate(new Vector3(0, -4, 0) * Time.deltaTime);
+        if (transform.position.y < -5)
+        {
+            Destroy(gameObject);
+        }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "SuperBullet")
+        if (other.tag == "SuperBullet" )
         {
             Destroy(gameObject);
         }
