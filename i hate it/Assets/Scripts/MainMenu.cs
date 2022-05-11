@@ -5,17 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    
+    public GameObject ChooseLVL;
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space)&& gameObject.active==true)
+        if (Input.GetKey(KeyCode.Space)&& ChooseLVL.active==true)
         {
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
-    public void ExitGame()
+    public void ExitMenu()
     {
-        Debug.Log("quit game");
-        Application.Quit();
+        SceneManager.LoadScene("Menu_scen");
+        
     }
 }

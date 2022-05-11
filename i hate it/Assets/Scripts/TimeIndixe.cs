@@ -21,6 +21,6 @@ public class TimeIndixe : MonoBehaviour
     {
         FuelIndex =   music.time/(music.clip.length-10);
         transform.localScale = new Vector3(FuelScaleX, FuelScaleY *(1-FuelIndex), 1);
-        print(music.clip.length);
+       
     }
 }

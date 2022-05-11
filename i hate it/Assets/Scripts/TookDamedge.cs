@@ -8,8 +8,8 @@ public class TookDamedge : MonoBehaviour
     // Start is called before the first frame update
     public string name;
     public string name2;
-    public int hp; 
-    
+    public int hp;
+   
     void Start()
     {
         
@@ -25,10 +25,11 @@ public class TookDamedge : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
             else
-            {
+            { 
                 Destroy(gameObject);
             }
         }
+        
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
