@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject ChooseLVL;
-   
+
+    
     void Update()
     {
         if (Input.GetKey(KeyCode.Space)&& ChooseLVL.active==true)
@@ -28,6 +29,6 @@ public class MainMenu : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
-        print("by");
+       
     } 
 }

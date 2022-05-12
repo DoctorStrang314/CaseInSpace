@@ -7,14 +7,11 @@ public class Pause : MonoBehaviour
     // Start is called before the first frame update
     public GameObject panel;
     public AudioSource music;
-
-    public void Start()
-    {
-       Time.timeScale = 1f;
-    }
+    
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        
+        if (Input.GetKeyDown(SetKey.Keys["Pause"]))
         {
             panel.SetActive(true);
             Time.timeScale = 0;

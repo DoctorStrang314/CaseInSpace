@@ -30,25 +30,25 @@ public class shipMove : MonoBehaviour
              
               
           
-                if (Input.GetKey(KeyCode.D) && timer > 0.3 && transform.position.x < 1)
+                if (Input.GetKey(SetKey.Keys["Right"]) && timer > 0.3 && transform.position.x < 1)
                 {
                    
                     transform.Translate(new Vector3(1, 0, 0));
                 
                     timer -= 0.3f;
                 }
-                else if (Input.GetKey(KeyCode.A) && timer > 0.3 && transform.position.x > -0.4)
+                else if (Input.GetKey(SetKey.Keys["Left"]) && timer > 0.3 && transform.position.x > -0.4)
                 {
                 
                     transform.Translate(new Vector3(-1, 0, 0));
                     timer -= 0.3f;
                 }
-                else if (Input.GetKey(KeyCode.W) && timer > 0.23 && transform.position.y < -3)
+                else if (Input.GetKey(SetKey.Keys["Up"]) && timer > 0.23 && transform.position.y < -3)
                 {
                     transform.Translate(new Vector3(0, 1, 0));
                     timer -= 0.23f;
                 }
-                else if (Input.GetKey(KeyCode.S) && timer > 0.23 && transform.position.y > -4.4)
+                else if (Input.GetKey(SetKey.Keys["Down"]) && timer > 0.23 && transform.position.y > -4.4)
                 {
                     transform.Translate(new Vector3(0, -1, 0));
                     timer -= 0.23f;

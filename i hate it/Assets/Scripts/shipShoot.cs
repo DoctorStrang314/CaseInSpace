@@ -35,13 +35,13 @@ public class shipShoot : MonoBehaviour
         if (Time.timeScale!=0) {
         
                 EnergyBar.transform.localScale = new Vector3(EnergyScaleX, EnergyScaleY * energy, 1);
-                if (Input.GetKeyDown(KeyCode.Mouse1))
+                if (Input.GetKeyDown(SetKey.Keys["PowerShoot"]))
                 {
                     hold = true;
                     timeDown = Time.time;
                 }
 
-                if (Input.GetKeyUp(KeyCode.Mouse1))
+                if (Input.GetKeyUp(SetKey.Keys["PowerShoot"]))
                 {
                     hold = false;
                     timeUp = Time.time;
@@ -76,7 +76,7 @@ public class shipShoot : MonoBehaviour
                 }
 
                 //Обычный выстрел
-                else if (Input.GetKeyDown(KeyCode.Mouse0)&&timer >20 && energy>0.3)
+                else if (Input.GetKeyDown(SetKey.Keys["Shoot"])&&timer >20 && energy>0.3)
                 {
                     shoot.Play();   
                     Instantiate(bullet, spawnpoint.position + new Vector3(0, 1, 0), Quaternion.identity);

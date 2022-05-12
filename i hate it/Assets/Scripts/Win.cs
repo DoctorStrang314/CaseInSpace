@@ -11,8 +11,11 @@ public class Win : MonoBehaviour
     public GameObject enemys;
     bool flag = false;
     float finishTime = 0;
+    float startTime = 0;
+   
     void Update()
     {
+        
         if (Boss == false && flag == false)
         {
             Ship.GetComponent<CapsuleCollider2D>().enabled = false;
