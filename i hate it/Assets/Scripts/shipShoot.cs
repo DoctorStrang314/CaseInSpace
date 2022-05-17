@@ -62,7 +62,7 @@ public class shipShoot : MonoBehaviour
                     result = 0;
                 }
 
-                print(result);
+               
                //Супер Выстрел
                 if(result > 0.7  && energy > 0.6)
                 {
@@ -76,12 +76,12 @@ public class shipShoot : MonoBehaviour
                 }
 
                 //Обычный выстрел
-                else if (Input.GetKeyDown(SetKey.Keys["Shoot"])&&timer >20 && energy>0.3)
+                else if (Input.GetKeyDown(SetKey.Keys["Shoot"])&&timer >20 && energy>0.25)
                 {
                     shoot.Play();   
                     Instantiate(bullet, spawnpoint.position + new Vector3(0, 1, 0), Quaternion.identity);
                     timer = 0;
-                    energy -= 0.3f;
+                    energy -= 0.25f;
             
                 }
                 if (energy<1)

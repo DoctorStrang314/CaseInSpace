@@ -15,8 +15,8 @@ public class SetKey : MonoBehaviour
         Keys.Add("Left", KeyCode.A);
         Keys.Add("Right", KeyCode.D);
         Keys.Add("Pause", KeyCode.Q);
-        Keys.Add("Shoot", KeyCode.Mouse0);
-        Keys.Add("PowerShoot", KeyCode.Mouse1);
+        Keys.Add("Shoot", KeyCode.K);
+        Keys.Add("PowerShoot", KeyCode.L);
 
         
     }
@@ -29,7 +29,7 @@ public class SetKey : MonoBehaviour
         right.text = Keys["Right"].ToString();
         pause.text = Keys["Pause"].ToString();
         shoot.text = Keys["Shoot"].ToString();
-        powerShoot.text = Keys["PowerShoot"].ToString();
+        powerShoot.text = Keys["PowerShoot"].ToString()+" + 0.7s";
     }
     void OnGUI()
     {
